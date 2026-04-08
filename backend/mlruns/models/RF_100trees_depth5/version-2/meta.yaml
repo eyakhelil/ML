@@ -1,0 +1,16 @@
+creation_timestamp: 1775404098076
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775404098076
+model_id: m-a6a4123a47eb42d197dfd3c2a7722b2f
+name: RF_100trees_depth5
+run_id: b785a87ae0624b878dfef998f79babb8
+run_link: null
+source: models:/m-a6a4123a47eb42d197dfd3c2a7722b2f
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-a6a4123a47eb42d197dfd3c2a7722b2f/artifacts
+user_id: null
+version: 2
+workspace: default

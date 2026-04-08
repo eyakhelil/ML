@@ -1,0 +1,16 @@
+creation_timestamp: 1775347133112
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775347133112
+model_id: m-a78d6feb320d4e75b4fdfa339c1e50fe
+name: KNN_k5
+run_id: b81978810e56472682f0b6a99092d191
+run_link: null
+source: models:/m-a78d6feb320d4e75b4fdfa339c1e50fe
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-a78d6feb320d4e75b4fdfa339c1e50fe/artifacts
+user_id: null
+version: 1
+workspace: default

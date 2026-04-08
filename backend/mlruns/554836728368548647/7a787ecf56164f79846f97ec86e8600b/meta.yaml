@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/7a787ecf56164f79846f97ec86e8600b/artifacts
+end_time: 1775347158125
+entry_point_name: ''
+experiment_id: '554836728368548647'
+lifecycle_stage: active
+run_id: 7a787ecf56164f79846f97ec86e8600b
+run_name: SVM_poly_C0.1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775347155465
+status: 3
+tags: []
+user_id: Administrator

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/024784df96344bcd9969ae0182858d41/artifacts
+end_time: 1775404132841
+entry_point_name: ''
+experiment_id: '554836728368548647'
+lifecycle_stage: active
+run_id: 024784df96344bcd9969ae0182858d41
+run_name: LR_C1.0_lbfgs
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775404129506
+status: 3
+tags: []
+user_id: Administrator

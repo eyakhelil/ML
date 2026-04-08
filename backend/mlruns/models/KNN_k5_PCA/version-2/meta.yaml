@@ -1,0 +1,16 @@
+creation_timestamp: 1775404048902
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775404048902
+model_id: m-319e78f457bb47f5a4026bebc6466580
+name: KNN_k5_PCA
+run_id: 672e0d3a96084e248af4de2640f6ff4b
+run_link: null
+source: models:/m-319e78f457bb47f5a4026bebc6466580
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-319e78f457bb47f5a4026bebc6466580/artifacts
+user_id: null
+version: 2
+workspace: default

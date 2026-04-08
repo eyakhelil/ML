@@ -1,0 +1,7 @@
+artifact_location: file:///C:/Users/Administrator/project_studentPerformance/backend/../mlruns/169461373231303738
+creation_time: 1775345715575
+experiment_id: '169461373231303738'
+last_update_time: 1775345715575
+lifecycle_stage: active
+name: student_performance_classification
+workspace: default
