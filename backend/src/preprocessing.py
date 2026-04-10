@@ -5,14 +5,9 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 import joblib
 import os
 
-def preprocess(df: pd.DataFrame, target_col: str = "G3", save_dir: str = "data/processed"):
-    """
-    Prétraite le dataset :
-    - Encode les variables catégorielles
-    - Crée une cible binaire (pass/fail)
-    - Normalise les features numériques
-    - Sauvegarde les données traitées
-    """
+def preprocess(df, target_col="G3", save_dir=None):
+    if save_dir is None:
+        save_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "processed")
     os.makedirs(save_dir, exist_ok=True)
     
     df = df.copy()
@@ -20,15 +15,12 @@ def preprocess(df: pd.DataFrame, target_col: str = "G3", save_dir: str = "data/p
     # Créer la cible binaire
     df["pass"] = (df["G3"] >= 10).astype(int)
     
-    # Séparer features et cible (on exclut G1, G2, G3 pour éviter la fuite de données)
-    # Pour tester l'impact de l'assiduité, notes intermédiaires et participation
+    # Séparer features et cible
+    # On garde les variables les plus significatives pour éviter le sur-apprentissage sur un petit dataset
     features_to_keep = [
-        "absences", "studytime", "failures", "goout", "Dalc", "Walc",
-        "health", "famrel", "freetime", "G1", "G2",
-        "school", "sex", "address", "famsize", "Pstatus",
-        "Medu", "Fedu", "Mjob", "Fjob", "reason", "guardian",
-        "traveltime", "schoolsup", "famsup", "paid", "activities",
-        "nursery", "higher", "internet", "romantic"
+        "G1", "G2", "failures", "absences", "studytime", "freetime", 
+        "goout", "health", "Medu", "Fedu", "traveltime",
+        "school", "sex", "address", "famsize", "Pstatus", "higher", "internet"
     ]
     
     X = df[features_to_keep].copy()

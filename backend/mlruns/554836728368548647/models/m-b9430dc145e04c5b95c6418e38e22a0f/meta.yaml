@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-b9430dc145e04c5b95c6418e38e22a0f/artifacts
+creation_timestamp: 1775763512606
+experiment_id: '554836728368548647'
+last_updated_timestamp: 1775763515335
+model_id: m-b9430dc145e04c5b95c6418e38e22a0f
+model_type: null
+name: model
+source_run_id: 9d17c7c6cd9f4f1185230dcc0cda0ded
+status: 2
+status_message: null

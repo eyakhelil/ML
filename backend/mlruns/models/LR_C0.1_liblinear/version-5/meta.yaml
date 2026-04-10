@@ -1,0 +1,16 @@
+creation_timestamp: 1775763515369
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775763515369
+model_id: m-b9430dc145e04c5b95c6418e38e22a0f
+name: LR_C0.1_liblinear
+run_id: 9d17c7c6cd9f4f1185230dcc0cda0ded
+run_link: null
+source: models:/m-b9430dc145e04c5b95c6418e38e22a0f
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-b9430dc145e04c5b95c6418e38e22a0f/artifacts
+user_id: null
+version: 5
+workspace: default

@@ -44,7 +44,7 @@ def list_models():
 
 @app.post("/train")
 def train_models():
-    df = load_data("data/raw/student-mat.csv")
+    df = load_data("data/raw/student_performance_clean.csv")
     preprocess(df, save_dir="data/processed")
     results = run_all_experiments()
     return {"status": "ok", "runs": len(results)}

@@ -1,0 +1,16 @@
+creation_timestamp: 1775762349099
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775762349099
+model_id: m-96bb038689084f7c8c858e0665460a95
+name: KNN_k3
+run_id: f56ea20e7ad94dec9f01f7e35b6559e0
+run_link: null
+source: models:/m-96bb038689084f7c8c858e0665460a95
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-96bb038689084f7c8c858e0665460a95/artifacts
+user_id: null
+version: 4
+workspace: default

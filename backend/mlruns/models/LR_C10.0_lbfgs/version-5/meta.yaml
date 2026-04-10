@@ -1,0 +1,16 @@
+creation_timestamp: 1775763524474
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775763524474
+model_id: m-a45d391b238d4cf88e6e3b06d15cb425
+name: LR_C10.0_lbfgs
+run_id: e540b9a2c11344149d5c205f01475beb
+run_link: null
+source: models:/m-a45d391b238d4cf88e6e3b06d15cb425
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-a45d391b238d4cf88e6e3b06d15cb425/artifacts
+user_id: null
+version: 5
+workspace: default

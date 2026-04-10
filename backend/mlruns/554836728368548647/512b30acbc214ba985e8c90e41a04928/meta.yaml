@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/512b30acbc214ba985e8c90e41a04928/artifacts
+end_time: 1775762426698
+entry_point_name: ''
+experiment_id: '554836728368548647'
+lifecycle_stage: active
+run_id: 512b30acbc214ba985e8c90e41a04928
+run_name: RF_100trees_depth5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775762421904
+status: 3
+tags: []
+user_id: Administrator

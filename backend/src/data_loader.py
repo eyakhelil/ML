@@ -1,9 +1,12 @@
 import pandas as pd
 import os
 
-def load_data(path: str = "data/raw/student-mat.csv") -> pd.DataFrame:
+def load_data(path: str = "data/raw/student_performance_clean.csv") -> pd.DataFrame:
     """Charge le dataset Student Performance."""
-    df = pd.read_csv(path, sep=";")
+    # Détection automatique du séparateur ou forçage à ',' car c'est le nouveau format
+    df = pd.read_csv(path, sep=",", skipinitialspace=True)
+    # Nettoyage profond : suppression des espaces et des guillemets (simples ou doubles)
+    df.columns = [c.strip().strip("'").strip('"') for c in df.columns]
     print(f"Dataset chargé : {df.shape[0]} lignes, {df.shape[1]} colonnes")
     return df
 

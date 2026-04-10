@@ -35,6 +35,10 @@ def predict_student(model_path, scaler_path, encoders_path, student_data):
     if hasattr(model, "predict_proba"):
         proba = model.predict_proba(X_scaled)[0][1]
 
+    # Règle métier : Moyenne (G1, G2) < 10 => Échec
+    if (student_data.get("G1", 0) + student_data.get("G2", 0)) / 2 < 10:
+        pred = 0
+
     return {
         "prediction": int(pred),
         "label": "Succès (≥10)" if pred == 1 else "Échec (<10)",

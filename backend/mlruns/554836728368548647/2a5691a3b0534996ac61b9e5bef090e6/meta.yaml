@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/2a5691a3b0534996ac61b9e5bef090e6/artifacts
+end_time: 1775763444733
+entry_point_name: ''
+experiment_id: '554836728368548647'
+lifecycle_stage: active
+run_id: 2a5691a3b0534996ac61b9e5bef090e6
+run_name: SVM_rbf_C0.1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775763441753
+status: 3
+tags: []
+user_id: Administrator

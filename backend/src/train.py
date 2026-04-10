@@ -15,12 +15,15 @@ import joblib
 import os
 import json
 
-# Chemin MLflow
-mlflow.set_tracking_uri("../mlruns")
+# Chemins MLflow
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+mlflow.set_tracking_uri("mlruns") # MLflow gère bien le relatif par défaut si on est au bon endroit
 mlflow.set_experiment("student_performance_classification")
 
-def load_processed_data(data_dir: str = "../data/processed"):
-    X_train = pd.read_csv(f"{data_dir}/X_train.csv").values
+def load_processed_data(data_dir=None):
+    if data_dir is None:
+        data_dir = os.path.join(BASE_DIR, "data", "processed")
+    X_train = pd.read_csv(os.path.join(data_dir, "X_train.csv")).values
     X_test  = pd.read_csv(f"{data_dir}/X_test.csv").values
     y_train = pd.read_csv(f"{data_dir}/y_train.csv").values.ravel()
     y_test  = pd.read_csv(f"{data_dir}/y_test.csv").values.ravel()
@@ -42,7 +45,8 @@ def train_and_log(model, params, model_name, X_train, X_test, y_train, y_test,
                   use_pca=False, pca_components=10):
     
     # Configurer MLflow ici, pas au niveau global
-    mlflow.set_tracking_uri("../mlruns")
+    # Configurer MLflow
+    mlflow.set_tracking_uri("mlruns")
     mlflow.set_experiment("student_performance_classification")
     
     with mlflow.start_run(run_name=model_name):
@@ -61,7 +65,7 @@ def train_and_log(model, params, model_name, X_train, X_test, y_train, y_test,
             Xte = pca.transform(Xte)
             variance = round(sum(pca.explained_variance_ratio_), 4)
             mlflow.log_metric("pca_explained_variance", variance)
-            joblib.dump(pca, f"../models/{model_name}_pca.pkl")
+            joblib.dump(pca, os.path.join(BASE_DIR, "models", f"{model_name}_pca.pkl"))
         
         # Entraînement
         model.fit(Xtr, y_train)
@@ -80,8 +84,8 @@ def train_and_log(model, params, model_name, X_train, X_test, y_train, y_test,
         mlflow.log_dict({"confusion_matrix": cm}, "confusion_matrix.json")
         
         # Sauvegarde du modèle
-        os.makedirs("../models", exist_ok=True)
-        model_path = f"../models/{model_name}.pkl"
+        os.makedirs(os.path.join(BASE_DIR, "models"), exist_ok=True)
+        model_path = os.path.join(BASE_DIR, "models", f"{model_name}.pkl")
         joblib.dump(model, model_path)
         mlflow.sklearn.log_model(model, artifact_path="model",
                                   registered_model_name=model_name)
@@ -146,7 +150,7 @@ def run_all_experiments():
 
     # Sauvegarde du tableau comparatif
     df_results = pd.DataFrame(results)
-    df_results.to_csv("../data/processed/results_comparison.csv", index=False)
+    df_results.to_csv(os.path.join(BASE_DIR, "data", "processed", "results_comparison.csv"), index=False)
     print("\n── Résumé ──────────────────────────────────────────────────────")
     print(df_results.sort_values("f1_score", ascending=False).to_string(index=False))
     
