@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/ce75bd064abf443da1763fb9c7b52372/artifacts
+end_time: 1775780523772
+entry_point_name: ''
+experiment_id: '554836728368548647'
+lifecycle_stage: active
+run_id: ce75bd064abf443da1763fb9c7b52372
+run_name: KNN_k9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775780520610
+status: 3
+tags: []
+user_id: Administrator

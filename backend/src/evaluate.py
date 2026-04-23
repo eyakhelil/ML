@@ -8,13 +8,26 @@ def predict_student(model_path, scaler_path, encoders_path, student_data):
     scaler   = joblib.load(scaler_path)
     encoders = joblib.load(encoders_path)
 
-    df = pd.DataFrame([student_data])
+    # Normaliser les données (clés en minuscules, mapping yes/no -> 1/0)
+    student_data_clean = {}
+    for k, v in student_data.items():
+        val = v
+        if isinstance(v, str):
+            v_low = v.lower().strip()
+            if v_low == "yes": val = 1
+            elif v_low == "no": val = 0
+        student_data_clean[k.lower().strip()] = val
+
+    df = pd.DataFrame([student_data_clean])
 
     # Encoder les colonnes catégorielles
     for col, le in encoders.items():
         if col in df.columns:
             try:
-                df[col] = le.transform(df[col])
+                # S'assurer que la valeur est une string pour le LabelEncoder
+                # (au cas où "yes" aurait déjà été mappé en 1 mais l'encodeur l'attend)
+                # Note: si c'est déjà 1, le transform échouera car il attend 'yes'
+                df[col] = le.transform(df[col].astype(str))
             except Exception:
                 df[col] = 0
 

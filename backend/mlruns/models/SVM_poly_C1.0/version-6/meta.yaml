@@ -1,0 +1,16 @@
+creation_timestamp: 1775780554989
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775780554989
+model_id: m-dafe0b92481d4e7b95d63181b7d2f6a8
+name: SVM_poly_C1.0
+run_id: 4bbd085f506c49f4ba9f0ffb16956fdf
+run_link: null
+source: models:/m-dafe0b92481d4e7b95d63181b7d2f6a8
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-dafe0b92481d4e7b95d63181b7d2f6a8/artifacts
+user_id: null
+version: 6
+workspace: default

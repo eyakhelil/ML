@@ -12,18 +12,29 @@ def preprocess(df, target_col="G3", save_dir=None):
     
     df = df.copy()
     
-    # Créer la cible binaire
-    df["pass"] = (df["G3"] >= 10).astype(int)
+    # Normalisation des colonnes pour éviter les KeyError dus à la casse ou aux espaces
+    df.columns = [c.strip().strip("'").strip('"').lower() for c in df.columns]
     
-    # Séparer features et cible
-    # On garde les variables les plus significatives pour éviter le sur-apprentissage sur un petit dataset
+    # Mapper les features demandées (en minuscules)
     features_to_keep = [
-        "G1", "G2", "failures", "absences", "studytime", "freetime", 
-        "goout", "health", "Medu", "Fedu", "traveltime",
-        "school", "sex", "address", "famsize", "Pstatus", "higher", "internet"
+        "g1", "g2", "failures", "absences", "studytime", "freetime", 
+        "goout", "health", "medu", "fedu", "traveltime",
+        "school", "sex", "address", "famsize", "pstatus", "higher", "internet"
     ]
     
+    # Vérifier la présence des colonnes
+    missing = [c for c in features_to_keep if c not in df.columns]
+    if missing:
+        print(f"ATTENTION: Colonnes manquantes dans le dataset: {missing}")
+        # On essaie de continuer avec ce qu'on a
+        features_to_keep = [c for c in features_to_keep if c in df.columns]
+    
     X = df[features_to_keep].copy()
+    
+    # S'assurer que 'pass' est calculé sur la colonne G3 normalisée
+    # (qui est maintenant 'g3' car on a tout mis en minuscules)
+    g3_col = "g3" if "g3" in df.columns else "G3"
+    df["pass"] = (df[g3_col.lower()] >= 10).astype(int)
     y = df["pass"]
     
     # Encoder les colonnes catégorielles

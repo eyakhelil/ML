@@ -1,0 +1,16 @@
+creation_timestamp: 1775780530604
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775780530604
+model_id: m-dd49de60e0274372802251cfa88489d8
+name: SVM_rbf_C0.1
+run_id: fd6769b378b949de96c0006e5221bec8
+run_link: null
+source: models:/m-dd49de60e0274372802251cfa88489d8
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-dd49de60e0274372802251cfa88489d8/artifacts
+user_id: null
+version: 6
+workspace: default

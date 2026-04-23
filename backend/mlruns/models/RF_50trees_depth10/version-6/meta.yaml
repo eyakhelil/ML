@@ -1,0 +1,16 @@
+creation_timestamp: 1775780568773
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775780568773
+model_id: m-e334c274950d4b578106ccf709a62e1a
+name: RF_50trees_depth10
+run_id: 5743ae5a979e42c38b923f16f980f02c
+run_link: null
+source: models:/m-e334c274950d4b578106ccf709a62e1a
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-e334c274950d4b578106ccf709a62e1a/artifacts
+user_id: null
+version: 6
+workspace: default

@@ -1,0 +1,16 @@
+creation_timestamp: 1775780544272
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775780544272
+model_id: m-7d89d4c82f59437daa224b03f94f587f
+name: SVM_linear_C1.0
+run_id: 5395be406fc54a7b92f469d790f74292
+run_link: null
+source: models:/m-7d89d4c82f59437daa224b03f94f587f
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/src/../mlruns/554836728368548647/models/m-7d89d4c82f59437daa224b03f94f587f/artifacts
+user_id: null
+version: 6
+workspace: default
