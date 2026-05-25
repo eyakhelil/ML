@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/707939676895042728/def1a355ddbb4b8b86df9770c6fefa75/artifacts
+end_time: 1779644802116
+entry_point_name: ''
+experiment_id: '707939676895042728'
+lifecycle_stage: active
+run_id: def1a355ddbb4b8b86df9770c6fefa75
+run_name: drift_check_kstest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779644801936
+status: 3
+tags: []
+user_id: Administrator

@@ -1,0 +1,10 @@
+Run : rf_200trees_depth10
+==================================================
+              precision    recall  f1-score   support
+
+       Échec       0.53      0.47      0.50        17
+      Succès       0.92      0.94      0.93       110
+
+    accuracy                           0.87       127
+   macro avg       0.73      0.70      0.71       127
+weighted avg       0.87      0.87      0.87       127

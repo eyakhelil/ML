@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/880783879131699566/5f7e65aa8cb1449fbd9c2c92e516ab50/artifacts
+end_time: 1777125250114
+entry_point_name: ''
+experiment_id: '880783879131699566'
+lifecycle_stage: active
+run_id: 5f7e65aa8cb1449fbd9c2c92e516ab50
+run_name: Q2_stability
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777125249749
+status: 3
+tags: []
+user_id: Administrator

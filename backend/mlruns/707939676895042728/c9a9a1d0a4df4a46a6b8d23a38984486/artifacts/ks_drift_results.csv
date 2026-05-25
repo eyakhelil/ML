@@ -1,0 +1,11 @@
+feature,ks_stat,p_value,drifted
+absences,0.2299,0.0,True
+studytime,0.5134,0.0,True
+failures,0.4446,0.0,True
+goout,0.0538,0.9128,False
+health,0.0574,0.8698,False
+famrel,0.0438,0.9843,False
+freetime,0.1265,0.0712,False
+G1,0.0524,0.9255,False
+G2,0.066,0.7382,False
+traveltime,0.0129,1.0,False

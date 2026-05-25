@@ -1,0 +1,16 @@
+creation_timestamp: 1779748618909
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1779748618909
+model_id: m-c6dbbe1382a24c44af6158e2a5f18dee
+name: student_performance_model
+run_id: 9a768b85e16942f9a7e01c5ab5bacc92
+run_link: null
+source: models:/m-c6dbbe1382a24c44af6158e2a5f18dee
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/706432678453245678/models/m-c6dbbe1382a24c44af6158e2a5f18dee/artifacts
+user_id: null
+version: 12
+workspace: default

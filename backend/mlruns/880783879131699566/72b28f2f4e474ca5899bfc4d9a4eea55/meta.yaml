@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/880783879131699566/72b28f2f4e474ca5899bfc4d9a4eea55/artifacts
+end_time: 1777125247552
+entry_point_name: ''
+experiment_id: '880783879131699566'
+lifecycle_stage: active
+run_id: 72b28f2f4e474ca5899bfc4d9a4eea55
+run_name: Q1_feature_importance
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777125246782
+status: 3
+tags: []
+user_id: Administrator

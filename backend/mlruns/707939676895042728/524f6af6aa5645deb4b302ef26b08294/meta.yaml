@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/707939676895042728/524f6af6aa5645deb4b302ef26b08294/artifacts
+end_time: 1779644802216
+entry_point_name: ''
+experiment_id: '707939676895042728'
+lifecycle_stage: active
+run_id: 524f6af6aa5645deb4b302ef26b08294
+run_name: drift_decision
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779644802139
+status: 3
+tags: []
+user_id: Administrator

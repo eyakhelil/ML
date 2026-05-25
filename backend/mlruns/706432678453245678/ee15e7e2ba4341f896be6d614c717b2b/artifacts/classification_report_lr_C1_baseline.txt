@@ -1,0 +1,10 @@
+Run : lr_C1_baseline
+==================================================
+              precision    recall  f1-score   support
+
+       Échec       0.50      0.53      0.51        17
+      Succès       0.93      0.92      0.92       110
+
+    accuracy                           0.87       127
+   macro avg       0.71      0.72      0.72       127
+weighted avg       0.87      0.87      0.87       127

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/880783879131699566/088f7d762a5940ad849604e256f570ed/artifacts
+end_time: 1777125250619
+entry_point_name: ''
+experiment_id: '880783879131699566'
+lifecycle_stage: active
+run_id: 088f7d762a5940ad849604e256f570ed
+run_name: Q4_n10_d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777125250535
+status: 3
+tags: []
+user_id: Administrator

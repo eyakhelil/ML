@@ -1,0 +1,7 @@
+artifact_location: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/707939676895042728
+creation_time: 1779548282895
+experiment_id: '707939676895042728'
+last_update_time: 1779548282895
+lifecycle_stage: active
+name: monitoring_drift
+workspace: default

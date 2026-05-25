@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/880783879131699566/3b48bd9e522842149377dc424acd1ada/artifacts
+end_time: 1777125253440
+entry_point_name: ''
+experiment_id: '880783879131699566'
+lifecycle_stage: active
+run_id: 3b48bd9e522842149377dc424acd1ada
+run_name: Q5_RF_vs_DT
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777125252939
+status: 3
+tags: []
+user_id: Administrator

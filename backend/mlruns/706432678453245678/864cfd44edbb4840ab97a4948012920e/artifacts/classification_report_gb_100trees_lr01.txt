@@ -1,0 +1,10 @@
+Run : gb_100trees_lr01
+==================================================
+              precision    recall  f1-score   support
+
+       Échec       0.59      0.59      0.59        17
+      Succès       0.94      0.94      0.94       110
+
+    accuracy                           0.89       127
+   macro avg       0.76      0.76      0.76       127
+weighted avg       0.89      0.89      0.89       127

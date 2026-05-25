@@ -1,0 +1,10 @@
+Run : rf_50trees_depth3
+==================================================
+              precision    recall  f1-score   support
+
+       Échec       0.89      0.47      0.62        17
+      Succès       0.92      0.99      0.96       110
+
+    accuracy                           0.92       127
+   macro avg       0.91      0.73      0.79       127
+weighted avg       0.92      0.92      0.91       127
