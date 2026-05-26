@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/project_studentPerformance/backend/mlruns/706432678453245678/10a52dbd0e304ff190ae775e0489fc8b/artifacts
+end_time: 1779797607899
+entry_point_name: ''
+experiment_id: '706432678453245678'
+lifecycle_stage: active
+run_id: 10a52dbd0e304ff190ae775e0489fc8b
+run_name: gb_100trees_lr01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779797603877
+status: 3
+tags: []
+user_id: Administrator

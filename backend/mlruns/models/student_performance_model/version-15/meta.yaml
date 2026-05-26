@@ -1,8 +1,8 @@
 creation_timestamp: 1779748629045
-current_stage: Production
+current_stage: Archived
 deployment_job_state: null
 description: null
-last_updated_timestamp: 1779748630247
+last_updated_timestamp: 1779797616097
 model_id: m-18ddf515b7184bd7a3e9d4f1c8852e10
 name: student_performance_model
 run_id: 5d4904ef0d124528a64b09b7287e04fd

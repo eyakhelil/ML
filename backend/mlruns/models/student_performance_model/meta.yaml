@@ -3,6 +3,6 @@ creation_timestamp: 1779544325497
 deployment_job_id: null
 deployment_job_state: null
 description: Modèle de classification — Prédiction réussite/échec étudiants
-last_updated_timestamp: 1779748630247
+last_updated_timestamp: 1779797616097
 name: student_performance_model
 workspace: default
